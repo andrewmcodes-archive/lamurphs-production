@@ -1,122 +1,116 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>L. A. Murph's</title>
+    <meta name="description" content="stuff and things">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="./dist/styles.css">
+  </head>
 
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <title>L. A. Murph's</title>
-  <meta name="description" content="stuff and things">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="robots" content="all,follow">
-  <link rel="stylesheet" href="./dist/styles.css">
-</head>
-
-<body class="" onload="load()">
-  <nav class="w-full flex items-center justify-between flex-wrap p-6 z-10 font-sans fixed" id="nav">
-    <div class="flex items-center flex-no-shrink text-white mr-6">
-      <a rel="noopener" data-scroll href="#home" class=" no-underline text-white font-semibold text-xl">L. A. Murph's</a>
-    </div>
-    <div class="block text-white lg:hidden">
-      <button class="flex items-center px-3 py-2 rounded text-purple-darkest bg-white hover:shadow-lg" id="js-nav-menu-button">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-    </div>
-  </nav>
-  <div class="js-menu-dismiss z-10">
-    <section id="home" class="bg-img">
-      <div class="overlay">
-
-        <div class="container min-h-screen">
-          <div class="container-content">
-            <h1 class="header">L. A. Murph's</h1>
-            <h2 class="subtitle">Gourmet food to go</h2>
+  <body onload="load()">
+    <nav class="w-full flex items-center justify-between flex-wrap p-6 z-10 font-sans fixed" id="nav">
+      <div class="flex items-center flex-no-shrink text-white mr-6">
+        <a rel="noopener" data-scroll href="#home" class=" no-underline text-white font-semibold text-xl">L. A. Murph's</a>
+      </div>
+      <div class="block text-white lg:hidden">
+        <button class="flex items-center px-3 py-2 rounded text-purple-darkest bg-white hover:shadow-lg" id="js-nav-menu-button">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="js-menu-dismiss z-10">
+      <section id="home" class="bg-img">
+        <div class="overlay">
+          <div class="container min-h-screen">
+            <div class="container-content">
+              <h1 class="header">L. A. Murph's</h1>
+              <h2 class="subtitle">Gourmet food to go</h2>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="about" class="">
-      <h1 class="section-header">About</h1>
-      <div class="container">
-        <p class="container-content">
-          On Aug. 1, Laura Murph & family opened L.A. Murph’s Fine Cooking, a meals-to-go and catering business. Take a moment and
-          browse this site and find out what we can do for you, and know that if you’re eating from/at L.A. Murph’s, it’s
-          made from scratch with only the finest ingredients available. We appreciate your patronage!
-        </p>
-      </div>
-    </section>
-    <section id="quote" class=" bg-img-2">
-      <div class="overlay">
+      </section>
+      <section id="about" class="">
+        <h1 class="section-header">About</h1>
         <div class="container">
-          <p class="quote-container-content">
-            “To cook and create for others is my passion, and I am privileged to have Salisbury, and the surrounding counties, support
-            my dream.”
-            <br>- Laura Murph
+          <p class="container-content">
+            On Aug. 1, Laura Murph & family opened L.A. Murph’s Fine Cooking, a meals-to-go and catering business. Take a moment and
+            browse this site and find out what we can do for you, and know that if you’re eating from/at L.A. Murph’s, it’s
+            made from scratch with only the finest ingredients available. We appreciate your patronage!
           </p>
         </div>
-
-      </div>
-    </section>
-    <section id="contact">
-      <h1 class="section-header">Contact Us</h1>
-      <div class="container">
-        <div class="container-content contact">
-          <form class="form">
-            <div class="flex flex-wrap ">
-              <div class="w-full px-3">
-                <label class="label" for="name">
-                  Full Name
-                </label>
-                <input class="input" id="name" type="text" placeholder="John Smith">
-              </div>
-            </div>
-            <div class="flex flex-wrap ">
-              <div class="w-full px-3">
-                <label class="label" for="email">
-                  Email
-                </label>
-                <input class="input" id="email" type="email" placeholder="myemail@provider.com">
-              </div>
-            </div>
-            <div class="flex flex-wrap  pb-16">
-              <div class="w-full px-3">
-                <label class="label" for="email">
-                  Message
-                </label>
-                <textarea rows="4" cols="50" class="input" id="text" placeholder="Your Message..."></textarea>
-              </div>
-            </div>
-            <div class="flex flex-wrap">
-              <div class="w-full px-3">
-                <a class="btn bg-green hover:bg-green-light text-white" href="#">
-                  Submit
-                </a>
-              </div>
-            </div>
-          </form>
+      </section>
+      <section id="quote" class=" bg-img-2">
+        <div class="overlay">
+          <div class="container">
+            <p class="quote-container-content">
+              “To cook and create for others is my passion, and I am privileged to have Salisbury, and the surrounding counties, support
+              my dream.”
+              <br>- Laura Murph
+            </p>
+          </div>
         </div>
-
-        <div class="container-content">
-          <iframe width="560" height="420" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=1532%20w%20innes%20st%20salisbury%20nc&key=AIzaSyBGG2spYz30Jt5IND_RQsWp0Yy-YZHGMoo"
-            allowfullscreen></iframe>
+      </section>
+      <section id="contact">
+        <h1 class="section-header">Contact Us</h1>
+        <div class="container">
+          <div class="container-content contact">
+            <form class="form">
+              <div class="flex flex-wrap ">
+                <div class="w-full px-3">
+                  <label class="label" for="name">
+                    Full Name
+                  </label>
+                  <input class="input" id="name" type="text" placeholder="John Smith">
+                </div>
+              </div>
+              <div class="flex flex-wrap ">
+                <div class="w-full px-3">
+                  <label class="label" for="email">
+                    Email
+                  </label>
+                  <input class="input" id="email" type="email" placeholder="myemail@provider.com">
+                </div>
+              </div>
+              <div class="flex flex-wrap  pb-16">
+                <div class="w-full px-3">
+                  <label class="label" for="email">
+                    Message
+                  </label>
+                  <textarea rows="4" cols="50" class="input" id="text" placeholder="Your Message..."></textarea>
+                </div>
+              </div>
+              <div class="flex flex-wrap">
+                <div class="w-full px-3">
+                  <a class="btn bg-green hover:bg-green-light text-white" href="#">
+                    Submit
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="container-content">
+            <iframe width="560" height="420" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=1532%20w%20innes%20st%20salisbury%20nc&key=AIzaSyBGG2spYz30Jt5IND_RQsWp0Yy-YZHGMoo"
+              allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-container green">
-        <a class="w-full text-lg text-white font-sans">1532 W Innes St, Salisbury, NC 28144</a>
-        <a class="w-full text-lg text-white font-sans">lmurph@lamurphs.com</a>
-        <a class="w-full text-lg text-white font-sans">(704) 636-2505</a>
-      </div>
-    </footer>
-  </div>
-  <script src="./dist/js/nav.js"></script>
-  <script src="./dist/js/scroll-offset.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGG2spYz30Jt5IND_RQsWp0Yy-YZHGMoo&callback=initMap" async
-    defer></script>
-  <script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
-</body>
-
+      </section>
+      <footer>
+        <div class="footer-container green">
+          <a class="w-full text-lg text-white font-sans">1532 W Innes St, Salisbury, NC 28144</a>
+          <a class="w-full text-lg text-white font-sans">lmurph@lamurphs.com</a>
+          <a class="w-full text-lg text-white font-sans">(704) 636-2505</a>
+        </div>
+      </footer>
+    </div>
+    <script src="./dist/js/nav.js"></script>
+    <script src="./dist/js/scroll-offset.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGG2spYz30Jt5IND_RQsWp0Yy-YZHGMoo&callback=initMap" async defer></script>
+    <script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
+  </body>
 </html>
