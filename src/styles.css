@@ -1,0 +1,94 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.green {
+  background-color: #1F9D55 !important;
+}
+p {
+  max-width: 36em;
+  line-height: 1.5;
+}
+.btn {
+   @apply font-bold py-3 px-6 rounded-full no-underline;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.bg-img {
+  background-image: url("/dist/images/salad.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img-2 {
+  background-image: url("/dist/images/pie.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  margin: 0 auto;
+  @apply w-full flex items-center justify-center flex-col text-center px-16;
+}
+
+.container-content {
+  @apply text-center mt-4 pb-8 w-full;
+}
+.quote-container-content {
+  @apply text-2xl text-white text-center mt-16 mb-16 w-full;
+}
+.header {
+  @apply text-8xl text-white font-sans mb-8;
+}
+
+.subtitle {
+  @apply text-4xl text-white font-sans;
+}
+
+.section-header {
+  @apply text-center text-5xl text-black font-sans mb-4 pt-16;
+}
+
+.form {
+  @apply w-full max-w-md text-left px-8 mb-8;
+}
+
+.footer-container {
+  @apply h-full flex items-center justify-center flex-col text-center p-16;
+}
+
+.label {
+  @apply block uppercase tracking-wide text-white text-xs font-bold mb-2;
+}
+
+.input {
+  @apply appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight;
+}
+
+@screen md {
+  .container {
+    @apply px-2;
+  }
+  .contact {
+    @apply pr-8;
+  }
+  .footer-container {
+    @apply flex-row;
+  }
+  .form {
+    @apply mb-0;
+  }
+  .container-content {
+    @apply text-center mb-8 w-full;
+  }
+}
+
+@screen lg {
+  .container {
+    @apply flex-row;
+  }
+  .header {
+    @apply text-12xl;
+  }
+}
