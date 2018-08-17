@@ -96,9 +96,13 @@ p {
 
 .container {
   margin: 0 auto;
-  @apply w-full flex items-center justify-center flex-col text-center px-8;
+  @apply w-full flex items-center justify-center flex-col text-center px-1;
 }
-
+@screen md {
+  .container {
+    @apply px-8;
+  }
+}
 @screen xl {
   .container {
     @apply px-12 !important;
@@ -312,32 +316,32 @@ form {
 }
 
 .menu-tab-container {
-  @apply mt-2 w-full flex justify-between bg-white pb-4;
+  @apply mt-2 w-full flex justify-between bg-grey-lightest pb-4;
 }
 
 .menu-icon-container {
-  @apply block flex flex-col items-center justify-center no-underline text-center overflow-hidden font-bold tracking-wide green-color;
+  @apply block flex flex-col items-center justify-center no-underline text-center overflow-hidden green-color;
   line-height: inherit;
 }
 
-.menu-tab-container {
-  @apply bg-grey-lightest;
-}
-
-.menu-tab {
-  @apply w-full green-color flex flex-col;
-}
-
 .menu-icon {
-  @apply green-color border-2 green-border p-4 rounded-full no-underline text-lg mb-2;
+  @apply green-color border-2 green-border p-2 rounded-full no-underline text-xs mb-2;
 }
 
 .menu-icon:hover {
   @apply green-bg text-white;
 }
 
+.menu-tab {
+  @apply w-full green-color flex flex-col;
+}
+
+
 .menu-item-title {
   @apply text-grey-darkest mb-1;
+}
+.menu-item-description {
+  @apply font-normal;
 }
 
 .menu-item-price {
@@ -345,6 +349,9 @@ form {
 }
 
 @screen md {
+  .footer-text {
+    @apply text-left;
+  }
   #menu .container {
     @apply flex-col;
   }
@@ -355,7 +362,7 @@ form {
     @apply mr-8;
   }
   .menu-container {
-    @apply ;
+    @apply font-bold tracking-wide;
   }
   .menu-container-content {
     @apply flex px-6;
