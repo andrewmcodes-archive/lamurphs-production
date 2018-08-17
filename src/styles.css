@@ -276,11 +276,11 @@ form {
 }
 
 .footer-links {
-  @apply flex flex-col;
+  @apply flex flex-col no-underline;
 }
 
 .footer-text {
-  @apply w-full text-sm text-white font-sans mb-4 leading-none text-center;
+  @apply w-full text-sm text-white font-sans mb-4 leading-none text-center no-underline;
 }
 
 .onshore-footer-text {
