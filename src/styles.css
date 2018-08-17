@@ -196,7 +196,7 @@ p {
 /* Home */
 
 .header {
-  @apply text-4xl text-white font-sans mb-8 flex flex-col items-center leading-none text-center w-full;
+  @apply text-5xl text-white font-sans mb-8 flex flex-col items-center leading-none text-center w-full;
 }
 
 .header-icon {
