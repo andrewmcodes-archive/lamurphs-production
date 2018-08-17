@@ -96,11 +96,11 @@ p {
 
 .container {
   margin: 0 auto;
-  @apply w-full flex items-center justify-center flex-col text-center px-1;
+  @apply w-full flex items-center justify-center flex-col text-left px-2;
 }
 @screen md {
   .container {
-    @apply px-8;
+    @apply px-8 text-center;
   }
 }
 @screen xl {
@@ -110,15 +110,31 @@ p {
 }
 
 .container-content {
-  @apply text-center mt-2 pb-8 w-full text-base leading-normal;
+  @apply text-left mt-2 pb-8 px-4 w-full text-base leading-normal;
 }
-
+@screen md {
+  .container-content {
+    @apply text-center;
+  }
+}
+@screen lg {
+  .container-content {
+    @apply text-xl;
+  }
+}
 .quote-container-content {
-  @apply text-lg text-white text-center mt-16 mb-4 w-full;
+  @apply text-lg text-white text-left mt-16 mb-4 px-4 w-full;
 }
-
 .quote-container-author {
   @apply text-white text-base font-bold tracking-wide leading-tight mb-16;
+}
+@screen md {
+  .quote-container-content {
+    @apply px-8 text-center text-xl;
+  }
+  .quote-container-author {
+    @apply mb-16 !important;
+  }
 }
 
 /* Nav */
@@ -216,7 +232,7 @@ p {
 }
 
 .subtitle {
-  @apply text-2xl text-white font-sans font-normal tracking-wide;
+  @apply text-2xl text-white font-sans font-normal tracking-wide text-center;
 }
 
 @screen md {
@@ -386,9 +402,6 @@ form {
     @apply pr-8 pb-0;
   }
 }
-.quote-container-content {
-  @apply mt-8;
-}
 .quote-container-author {
   @apply mb-8;
 }
@@ -396,9 +409,7 @@ form {
   #quote .container {
     @apply flex-col;
   }
-  .quote-container-content {
-    @apply text-xl;
-  }}
+}
 @screen md {
   /* btn  */
   .btn-container {
@@ -425,9 +436,6 @@ form {
     @apply mb-0;
   }
   /* container */
-  .container-content {
-    @apply text-center text-base mb-12 w-full;
-  }
   .container {
     @apply px-2;
   }
@@ -450,9 +458,6 @@ form {
   /* container */
   .container {
     @apply flex-row;
-  }
-  .container-content {
-    @apply text-lg;
   }
   /* nav */
   .hider {
