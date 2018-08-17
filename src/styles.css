@@ -75,14 +75,14 @@ p {
 }
 
 .bg-img {
-  background-image: url("/dist/images/salad.JPG");
+  background-image: url("./dist/images/salad.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-img-2 {
-  background-image: url("/dist/images/pie.jpeg");
+  background-image: url("./dist/images/pie.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
