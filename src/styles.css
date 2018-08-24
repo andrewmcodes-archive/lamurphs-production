@@ -98,11 +98,13 @@ p {
   margin: 0 auto;
   @apply w-full flex items-center justify-center flex-col text-left px-2;
 }
+
 @screen md {
   .container {
     @apply px-8 text-center;
   }
 }
+
 @screen xl {
   .container {
     @apply px-12 !important;
@@ -112,22 +114,27 @@ p {
 .container-content {
   @apply text-left mt-2 pb-8 px-4 w-full text-base leading-normal;
 }
+
 @screen md {
   .container-content {
     @apply text-center;
   }
 }
+
 @screen lg {
   .container-content {
     @apply text-xl;
   }
 }
+
 .quote-container-content {
   @apply text-lg text-white text-left mt-16 mb-4 px-4 w-full;
 }
+
 .quote-container-author {
   @apply text-white text-base font-bold tracking-wide leading-tight mb-16;
 }
+
 @screen md {
   .quote-container-content {
     @apply px-8 text-center text-xl;
@@ -244,11 +251,13 @@ p {
 .section-header {
   @apply text-center text-5xl tracking-wide text-black font-sans mb-4 pt-8;
 }
+
 @screen md {
   .section-header {
     @apply pt-16;
   }
 }
+
 /* Form */
 
 form {
@@ -277,6 +286,10 @@ form {
 
 .footer-links {
   @apply flex flex-col no-underline;
+}
+
+a[href^="tel"] {
+  @apply text-white no-underline;
 }
 
 .footer-text {
@@ -352,10 +365,10 @@ form {
   @apply w-full green-color flex flex-col;
 }
 
-
 .menu-item-title {
   @apply text-grey-darkest mb-1;
 }
+
 .menu-item-description {
   @apply font-normal;
 }
@@ -402,14 +415,17 @@ form {
     @apply pr-8 pb-0;
   }
 }
+
 .quote-container-author {
   @apply mb-8;
 }
+
 @screen md {
   #quote .container {
     @apply flex-col;
   }
 }
+
 @screen md {
   /* btn  */
   .btn-container {
@@ -426,6 +442,9 @@ form {
     @apply flex-row justify-between px-8 pt-6;
   }
   .footer-links {
+    @apply text-left font-bold tracking-wide;
+  }
+  a[href^="tel"] {
     @apply text-left font-bold tracking-wide;
   }
   .onshore-footer-text {
