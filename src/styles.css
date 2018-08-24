@@ -196,11 +196,11 @@ p {
 /* Home */
 
 .header {
-  @apply text-5xl text-white font-sans mb-8 flex flex-col items-center leading-none text-center w-full;
+  @apply text-6xl text-white font-sans mb-8 flex flex-col items-center leading-none text-center w-full;
 }
 
 .header-icon {
-  @apply mr-2 mb-4 inline-block w-24 h-24 rounded-full p-8 bg-white text-black shadow-lg;
+  @apply mr-2 mb-4 inline-block w-24 h-24 rounded-full p-4 pt-6 bg-white text-black shadow-lg;
 }
 
 @screen md {
