@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="dist/tabs.css">
+
 </head>
 
 <body onload="load()">
@@ -88,52 +90,134 @@
       <h1 class="section-header">
         Menu
       </h1>
-      <div class="container">
+      <div data-tabs class="container">
         <div class="menu-tab-container">
-          <div class="menu-tab"><a class="menu-icon-container" href="#"><i class="menu-icon fas fa-location-arrow"></i>Entrees</a></div>
-          <div class="menu-tab"><a class="menu-icon-container" href="#"><i class="menu-icon fas fa-location-arrow"></i>Sides</a></div>
-          <div class="menu-tab"><a class="menu-icon-container" href="#"><i class="menu-icon fas fa-location-arrow"></i>Dessert</a></div>
-          <div class="menu-tab"><a class="menu-icon-container" href="#"><i class="menu-icon fas fa-location-arrow"></i>Niblets</a></div>
-          <div class="menu-tab"><a class="menu-icon-container" href="#"><i class="menu-icon fas fa-location-arrow"></i>Box Lunches</a></div>
+          <div data-tabs-item="1" data-tabs-active class="menu-tab">
+            <a class="menu-icon-container" href="#entrees">
+              <i class="menu-icon fas fa-location-arrow"></i>Entrees</a>
+          </div>
+          <div data-tabs-item="2" class="menu-tab">
+            <a class="menu-icon-container" href="#sides">
+              <i class="menu-icon fas fa-location-arrow"></i>Sides</a>
+          </div>
+          <div  data-tabs-item="3" class="menu-tab">
+            <a class="menu-icon-container" href="#">
+              <i class="menu-icon fas fa-location-arrow"></i>Dessert</a>
+          </div>
+          <div  data-tabs-item="4" class="menu-tab">
+            <a class="menu-icon-container" href="#">
+              <i class="menu-icon fas fa-location-arrow"></i>Niblets</a>
+          </div>
+          <div  data-tabs-item="5" class="menu-tab">
+            <a class="menu-icon-container" href="#">
+              <i class="menu-icon fas fa-location-arrow"></i>Box Lunches</a>
+          </div>
         </div>
         <div class="menu-container">
-        <h3 class="menu-container-header">Entrees</h3>
-        <div class="menu-container-content" id="entrees">
-          <div class="menu-col-l">
-            <div class="menu-item">
-              <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
-              <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
-                crumbs and topped with a sweet/savory mustard sauce<span class="menu-item-price">11.00</span></p>
-            </div>
-            <div class="menu-item">
-              <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
-              <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
-                crumbs and topped with a sweet/savory mustard sauce<span class="menu-item-price">11.00</span></p>
-            </div>
-            <div class="menu-item">
-              <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
-              <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
-                crumbs and topped with a sweet/savory mustard sauce<span class="menu-item-price">11.00</span></p>
+
+          <div data-tabs-content="1" data-tabs-active id="entrees">
+             <h3 class="menu-container-header">Entrees</h3>
+            <div class="menu-container-content">
+              <div class="menu-col-l">
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="menu-col-r">
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="menu-col-r">
-            <div class="menu-item">
-              <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
-              <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
-                crumbs and topped with a sweet/savory mustard sauce<span class="menu-item-price">11.00</span></p>
-            </div>
-            <div class="menu-item">
-              <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
-              <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
-                crumbs and topped with a sweet/savory mustard sauce<span class="menu-item-price">11.00</span></p>
-            </div>
-            <div class="menu-item">
-              <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
-              <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
-                crumbs and topped with a sweet/savory mustard sauce<span class="menu-item-price">11.00</span></p>
+          <div data-tabs-content="2" id="sides">
+             <h3 class="menu-container-header">Sides</h3>
+            <div class="menu-container-content">
+
+              <div class="menu-col-l">
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="menu-col-r">
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <h3 class="menu-item-title">Chicken Cordon Bleu</h3>
+                  <p class="menu-item-description">Boneless chicken breast filled w/ham, swiss cheese, and fresh asparagus, then lightly coated in panko bread
+                    crumbs and topped with a sweet/savory mustard sauce
+                    <span class="menu-item-price">11.00</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -184,6 +268,11 @@
       </div>
     </footer>
   </div>
+  <script src="./dist/js/tabs.js"></script>
+  <script>
+    // init
+    Tabs.init()
+  </script>
   <script src="./dist/js/nav.js"></script>
   <script src="./dist/js/scroll-offset.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGG2spYz30Jt5IND_RQsWp0Yy-YZHGMoo&callback=initMap" async
