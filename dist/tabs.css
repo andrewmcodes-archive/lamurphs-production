@@ -1,0 +1,6 @@
+[data-tabs] [data-tabs-content] {
+  display: none;
+}
+[data-tabs] [data-tabs-content][data-tabs-active] {
+  display: block;
+}
